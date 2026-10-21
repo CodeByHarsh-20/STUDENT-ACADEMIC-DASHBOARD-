@@ -8,3 +8,4 @@
 24BCE1006|Kabir Sen|19|kabir.sen@univ.edu|IT|2|40|50|Calculus:58;Digital Electronics:62;Physics:70;Programming in C++:65|CS101
 24BCE1099|Test Candidate|20|test.cand@univ.edu|CSE|4|0|0||
 24BCE1007|harsh agrawal|20|harsh@gmail.com|cse|3|4|5|cda:95;fods:98;oops:25|
+hello
