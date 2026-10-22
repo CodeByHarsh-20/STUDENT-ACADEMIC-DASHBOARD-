@@ -546,3 +546,80 @@ bool AcademicManager::loadRecords() {
         return false;
     }
 }
+
+vector<Student> AcademicManager::getMeritListBST() const {
+    vector<Student> result;
+    // Uses Custom Binary Search Tree Reverse In-Order Traversal (O(N))
+    gpaIndexTree.reverseInOrderTraversal([this, &result](const double&, const string& studentId) {
+        const Student* s = searchStudentById(studentId);
+        if (s) {
+            result.push_back(*s);
+        }
+    });
+    return result;
+}
+
+vector<Student> AcademicManager::getMeritListQuickSort() const {
+    vector<Student> sorted = students;
+    if (!sorted.empty()) {
+        Analytics::quickSortByGPA(sorted, 0, static_cast<int>(sorted.size()) - 1);
+    }
+    return sorted;
+}
+
+vector<AcademicAlert> AcademicManager::generateAlertsFromHeap() {
+    vector<AcademicAlert> result;
+    if (students.empty()) return result;
+
+    Heap<AcademicAlert, less<AcademicAlert>> alertHeap;
+
+    for (const auto& s : students) {
+        if (s.getAttendancePercentage() < 65.0 && s.getTotalClasses() > 0) {
+            alertHeap.push({3, s.getId(), s.getName(), 
+                           "CRITICAL: Attendance is " + to_string(static_cast<int>(s.getAttendancePercentage())) + "% (DEBARRED from examinations)"});
+        }
+        if (s.hasFailingSubjects()) {
+            string failedList = "";
+            for (const auto& sub : s.getFailedSubjects()) {
+                failedList += sub + " ";
+            }
+            alertHeap.push({3, s.getId(), s.getName(), 
+                           "ACADEMIC ARREAR: Failed subject(s): " + failedList});
+        }
+        if (s.getAttendancePercentage() >= 65.0 && s.getAttendancePercentage() < 75.0) {
+            alertHeap.push({2, s.getId(), s.getName(), 
+                           "WARNING: Attendance is " + to_string(static_cast<int>(s.getAttendancePercentage())) + "% (Requires medical condonation)"});
+        }
+        if (s.calculateGPA() >= 9.0 && !s.getMarks().empty()) {
+            alertHeap.push({1, s.getId(), s.getName(), 
+                           "HONORS: Outstanding GPA (" + to_string(s.calculateGPA()).substr(0, 4) + ") - Dean's List candidate"});
+        }
+    }
+
+    counselingQueue.clear();
+    while (!alertHeap.empty()) {
+        AcademicAlert topAlert = alertHeap.popValue();
+        result.push_back(topAlert);
+        if (topAlert.priority >= 2) {
+            counselingQueue.enqueue(topAlert);
+        }
+    }
+    return result;
+}
+
+bool AcademicManager::processNextCounselingAlertItem(AcademicAlert& alert) {
+    if (counselingQueue.empty()) return false;
+    alert = counselingQueue.dequeueValue();
+    return true;
+}
+
+string AcademicManager::getUndoDescription() const {
+    if (undoStack.empty()) return "";
+    return undoStack.top().description;
+}
+
+string AcademicManager::getRedoDescription() const {
+    if (redoStack.empty()) return "";
+    return redoStack.top().description;
+}
+

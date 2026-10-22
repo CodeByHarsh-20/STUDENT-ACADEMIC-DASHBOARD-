@@ -1,0 +1,28 @@
+# ninja log v6
+6	2536	8143788727438824	StudentAcademicDashboardGUI_autogen/timestamp	61328fdb8354dead
+6	2536	8143788727438824	StudentAcademicDashboardGUI_autogen/mocs_compilation.cpp	61328fdb8354dead
+6	2536	8143788727438824	C:/VIT/third sem/DSA/student_/build_gui/StudentAcademicDashboardGUI_autogen/timestamp	61328fdb8354dead
+6	2536	8143788727438824	C:/VIT/third sem/DSA/student_/build_gui/StudentAcademicDashboardGUI_autogen/mocs_compilation.cpp	61328fdb8354dead
+2552	4229	8143788728140189	CMakeFiles/StudentAcademicDashboardGUI.dir/FileManager.cpp.obj	9e5a3a2cb1cc1a7e
+2545	4566	8143788728066102	CMakeFiles/StudentAcademicDashboardGUI.dir/Student.cpp.obj	222d44d1cfe580e9
+2548	5007	8143788728099989	CMakeFiles/StudentAcademicDashboardGUI.dir/Analytics.cpp.obj	3c689aec529b58ab
+2542	5531	8143788728031753	CMakeFiles/StudentAcademicDashboardGUI.dir/StudentAcademicDashboardGUI_autogen/mocs_compilation.cpp.obj	c331635753c877cc
+4568	7322	8143788748301412	CMakeFiles/StudentAcademicDashboardGUI.dir/gui_main.cpp.obj	661fb00aac101597
+4230	7603	8143788744916152	CMakeFiles/StudentAcademicDashboardGUI.dir/AcademicManager.cpp.obj	faf3e1ed0d81c7d9
+5532	8841	8143788757931699	CMakeFiles/StudentAcademicDashboardGUI.dir/gui/DashboardView.cpp.obj	baf9b8906aceac4a
+7603	9890	8143788778651158	CMakeFiles/StudentAcademicDashboardGUI.dir/gui/StudentDialog.cpp.obj	adea495d14a222e3
+7323	10318	8143788775845419	CMakeFiles/StudentAcademicDashboardGUI.dir/gui/StudentsView.cpp.obj	824ad91b1b9fd0d4
+10	964	8143789124907072	StudentAcademicDashboardGUI_autogen/timestamp	61328fdb8354dead
+10	964	8143789124907072	StudentAcademicDashboardGUI_autogen/mocs_compilation.cpp	61328fdb8354dead
+10	964	8143789124907072	C:/VIT/third sem/DSA/student_/build_gui/StudentAcademicDashboardGUI_autogen/timestamp	61328fdb8354dead
+10	964	8143789124907072	C:/VIT/third sem/DSA/student_/build_gui/StudentAcademicDashboardGUI_autogen/mocs_compilation.cpp	61328fdb8354dead
+970	3950	8143789125475551	CMakeFiles/StudentAcademicDashboardGUI.dir/gui_main.cpp.obj	661fb00aac101597
+977	4195	8143789125549329	CMakeFiles/StudentAcademicDashboardGUI.dir/gui/MarksView.cpp.obj	3f9223ba2eab07a3
+966	4230	8143789125431358	CMakeFiles/StudentAcademicDashboardGUI.dir/StudentAcademicDashboardGUI_autogen/mocs_compilation.cpp.obj	c331635753c877cc
+973	4638	8143789125512720	CMakeFiles/StudentAcademicDashboardGUI.dir/gui/MainWindow.cpp.obj	d3759bf54e16aa68
+3950	6989	8143789155280938	CMakeFiles/StudentAcademicDashboardGUI.dir/gui/AttendanceView.cpp.obj	1081e44737900e6
+4231	7021	8143789158083008	CMakeFiles/StudentAcademicDashboardGUI.dir/gui/MeritListView.cpp.obj	66e750262c8ec928
+4195	7390	8143789157728608	CMakeFiles/StudentAcademicDashboardGUI.dir/gui/AnalyticsView.cpp.obj	ac2dd57138f9a584
+4638	7710	8143789162156551	CMakeFiles/StudentAcademicDashboardGUI.dir/gui/CurriculumView.cpp.obj	56e5a8b8e4023dc3
+6989	9083	8143789185670974	CMakeFiles/StudentAcademicDashboardGUI.dir/gui/DataManagementView.cpp.obj	3d0aa830649d0c8a
+9083	9772	8143789206606069	StudentAcademicDashboardGUI.exe	48772e72dff350ac

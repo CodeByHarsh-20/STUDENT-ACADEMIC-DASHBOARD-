@@ -1,0 +1,5 @@
+C:/VIT/third sem/DSA/student_/build_gui/CMakeFiles/StudentAcademicDashboardGUI.dir
+C:/VIT/third sem/DSA/student_/build_gui/CMakeFiles/edit_cache.dir
+C:/VIT/third sem/DSA/student_/build_gui/CMakeFiles/rebuild_cache.dir
+C:/VIT/third sem/DSA/student_/build_gui/CMakeFiles/StudentAcademicDashboardGUI_autogen_timestamp_deps.dir
+C:/VIT/third sem/DSA/student_/build_gui/CMakeFiles/StudentAcademicDashboardGUI_autogen.dir

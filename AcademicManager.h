@@ -119,9 +119,21 @@ public:
     // 14. Load Records
     bool loadRecords();
 
-    // Utility Helpers
+    // Utility Helpers & GUI Accessors
     size_t getStudentCount() const { return students.size(); }
     void seedSampleDataIfEmpty();
+    const vector<Student>& getAllStudents() const { return students; }
+    vector<Student> getMeritListBST() const;
+    vector<Student> getMeritListQuickSort() const;
+    vector<AcademicAlert> generateAlertsFromHeap();
+    const CourseGraph& getCurriculumGraph() const { return curriculumGraph; }
+    size_t getCounselingQueueSize() const { return counselingQueue.size(); }
+    bool hasCounselingAlerts() const { return !counselingQueue.empty(); }
+    bool processNextCounselingAlertItem(AcademicAlert& alert);
+    size_t getUndoCount() const { return undoStack.size(); }
+    size_t getRedoCount() const { return redoStack.size(); }
+    string getUndoDescription() const;
+    string getRedoDescription() const;
 };
 
 #endif // ACADEMICMANAGER_H

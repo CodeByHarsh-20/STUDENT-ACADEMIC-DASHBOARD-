@@ -1,0 +1,11 @@
+# University Academic Management System Records
+# Format: ID|Name|Age|Email|Dept|Sem|Attended|Total|Sub:Mark,...|Course,...
+24BCE1001|Aarav Sharma|19|aarav.sharma@univ.edu|CSE|3|20|50|Data Structures:95;Database Systems:91;Digital Logic:92;Discrete Math:94|CS101;CS102
+24BCE1002|Diya Patel|20|diya.patel@univ.edu|CSE|3|44|50|Data Structures:84;Database Systems:86;Digital Logic:80;Discrete Math:78|CS101
+24BCE1003|Rohan Verma|20|rohan.verma@univ.edu|ECE|3|34|50|Circuits:70;Data Structures:72;Digital Logic:68;Signals & Systems:75|CS101
+24BCE1004|Vikram Singh|21|vikram.singh@univ.edu|MECH|3|28|50|Fluid Mechanics:38;Kinematics:52;Material Science:45;Thermodynamics:34|
+23BCE0501|Ananya Iyer|21|ananya.iyer@univ.edu|CSE|5|46|50|Computer Networks:89;Design & Analysis of Algo:93;Operating Systems:88;Software Engineering:85|CS101;CS102;CS201;CS202
+24BCE1006|Kabir Sen|19|kabir.sen@univ.edu|IT|2|40|50|Calculus:58;Digital Electronics:62;Physics:70;Programming in C++:65|CS101
+24BCE1099|Test Candidate|20|test.cand@univ.edu|CSE|4|0|0||
+24BCE1007|harsh agrawal|20|harsh@gmail.com|cse|3|4|5|cda:95;fods:98;oops:25|
+24bb3|vedant agre|19|vedant@gmial.com|MECH|3|0|0|DSA:82;c++:85;maths:20|
