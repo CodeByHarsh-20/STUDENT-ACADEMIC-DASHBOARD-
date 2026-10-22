@@ -1,0 +1,11 @@
+
+# Compiled files
+build/
+*.exe
+*.dll
+*.obj
+*.o
+
+# IDE files
+.vscode/
+
